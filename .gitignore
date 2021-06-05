@@ -34,5 +34,3 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-#ignore config e.yml 
-/config/locales/en.yml
