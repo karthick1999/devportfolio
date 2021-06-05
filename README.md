@@ -3,7 +3,8 @@
 - blog 
 - portfolio 
 - drang and drop
-``` p ji 
+```ruby
+ p ji 
 ```
 This README would normally document whatever steps are necessary to get the
 application up and running.
