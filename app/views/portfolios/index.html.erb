@@ -1,0 +1,7 @@
+<h1>portfolio items</h1> 
+<% @portfolio_items.each do  |pis| %> 
+<p> <%=pis.title %></p> 
+<p> <%=pis.subtitle %></p>
+<p> <%=pis.body %></p>
+<%= image_tag pis.thumb_img if !pis.thumb_img.nil?%> 
+<% end %>s
