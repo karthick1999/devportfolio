@@ -1,6 +1,7 @@
 class PortfoliosController < ApplicationController
 	def index
 		@portfolio_items=Portfolio.all 
+<<<<<<< HEAD
 	end   
 	def new 
 		@portfolio_item=Portfolio.new
@@ -17,4 +18,10 @@ class PortfoliosController < ApplicationController
       end
     end
   end
+=======
+	end  
+	def new 
+
+	end 
+>>>>>>> 93874fa1818b045af7f209613a8e5b0c52be4cec
 end
