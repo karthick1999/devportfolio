@@ -6,6 +6,7 @@
 <p> <%=pis.body %></p>
 <%= image_tag pis.thumb_img if !pis.thumb_img.nil?%>  
  <%= link_to "edit portfolio...",edit_portfolio_path(pis)%> 
+  <td><%= link_to 'Destroy the portfolio',portfolio_path(pis), method: :delete, data: { confirm: 'Are you sure?' } %></td>
 <% end %>s
 
 
