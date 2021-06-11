@@ -1,20 +1,11 @@
 <h1>portfolio items</h1> 
-<a href="portfolios/new">create a new porfolio</a> 
-<%= link_to "CREATE NE PORTFOLIO", new_portfolio_path %> 
-<p>
-	<%= new_portfolio_path %>
-</p> 
-<p>
-	<%= new_portfolio_url %>
-</p>	
+<a href="portfolios/new">create a new porfolio</a> 	
 <% @portfolio_items.each do  |pis| %> 
-<p> <%=pis.title %></p> 
+<p> <%= link_to pis.title,portfolio_path(pis) %></p> 
 <p> <%=pis.subtitle %></p>
 <p> <%=pis.body %></p>
-<<<<<<< HEAD
 <%= image_tag pis.thumb_img if !pis.thumb_img.nil?%>  
- <%= link_to "edit portfolio...",edit_portfolio_path(pis.id)%> 
- <a href="/portfolios/<%= pis.id%>/edit">edit two</a>
+ <%= link_to "edit portfolio...",edit_portfolio_path(pis)%> 
 <% end %>s
 
 
